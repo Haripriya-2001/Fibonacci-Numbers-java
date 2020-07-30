@@ -1,0 +1,21 @@
+package FibonacciNumbers;
+import java.util.Scanner;
+public class Challenge2 
+{
+public static void main(String[] args)
+{
+int a=0, b=1, c;
+System.out.print(a+" "+b);
+Scanner rep = new Scanner(System.in);
+System.out.println("\nEnter how much series number is needed to be printed: ");
+int num = rep.nextInt();
+for(int i=1; i<=num; i++)
+{
+c=a+b;
+System.out.print(" "+c);
+a=b;
+b=c;
+}
+rep.close();
+}
+}
